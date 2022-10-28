@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C_Elegans" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sB0-O1-OB3">
+                                <rect key="frame" x="16" y="47" width="343" height="731"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C. Elegans Life Cycle Calculator" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pac-cb-yyw">
+                                <rect key="frame" x="64" y="47" width="247" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="tAN-yR-jdl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="8oU-Me-7Nq">
+                                <rect key="frame" x="156" y="229" width="185" height="34"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="center" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-Md-pUn">
+                                <rect key="frame" x="32" y="229" width="116" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="H2q-Xn-3dh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="0.24557636590000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wuZ-Md-pUn" firstAttribute="top" secondItem="8oU-Me-7Nq" secondAttribute="top" id="27a-6t-aGq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8oU-Me-7Nq" secondAttribute="trailing" constant="34" id="924-ed-NNg"/>
+                            <constraint firstItem="8oU-Me-7Nq" firstAttribute="leading" secondItem="wuZ-Md-pUn" secondAttribute="trailing" constant="8" symbolic="YES" id="9Ll-jJ-dd7"/>
+                            <constraint firstItem="Pac-cb-yyw" firstAttribute="centerX" secondItem="sB0-O1-OB3" secondAttribute="centerX" id="JOE-m9-dpy"/>
+                            <constraint firstItem="wuZ-Md-pUn" firstAttribute="bottom" secondItem="8oU-Me-7Nq" secondAttribute="bottom" id="LQL-lx-wjv"/>
+                            <constraint firstItem="Pac-cb-yyw" firstAttribute="top" secondItem="sB0-O1-OB3" secondAttribute="top" id="Mjp-fV-CtO"/>
+                            <constraint firstItem="sB0-O1-OB3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="R3R-lE-0d1"/>
+                            <constraint firstItem="8oU-Me-7Nq" firstAttribute="top" secondItem="Pac-cb-yyw" secondAttribute="bottom" constant="80" id="R4J-Mh-mfd"/>
+                            <constraint firstItem="Pac-cb-yyw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bpL-zw-hoD"/>
+                            <constraint firstItem="wuZ-Md-pUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="by4-NM-pFl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wuZ-Md-pUn" secondAttribute="bottom" constant="515" id="d3L-xK-ZeB"/>
+                            <constraint firstItem="Pac-cb-yyw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n1r-LJ-xLw"/>
+                            <constraint firstItem="sB0-O1-OB3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pId-ZM-08j"/>
+                            <constraint firstItem="Pac-cb-yyw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="q1c-8t-ZtM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainDashboard" destination="sB0-O1-OB3" id="VL8-Ka-rbV"/>
+                        <outlet property="startDatePicker" destination="8oU-Me-7Nq" id="Zmw-X9-7vo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="-2.2167487684729066"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

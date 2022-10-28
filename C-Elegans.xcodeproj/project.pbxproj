@@ -101,14 +101,13 @@
 		889B944E290B41D000B6A37C /* C-Elegans */ = {
 			isa = PBXGroup;
 			children = (
+				889B9484290B421D00B6A37C /* Views */,
+				889B9485290B425200B6A37C /* ViewControllers */,
+				889B9486290B426000B6A37C /* Models */,
 				889B944F290B41D000B6A37C /* AppDelegate.swift */,
 				889B9451290B41D000B6A37C /* SceneDelegate.swift */,
-				889B9453290B41D000B6A37C /* ViewController.swift */,
-				889B9455290B41D000B6A37C /* Main.storyboard */,
 				889B945B290B41D000B6A37C /* Assets.xcassets */,
-				889B945D290B41D000B6A37C /* LaunchScreen.storyboard */,
 				889B9460290B41D000B6A37C /* Info.plist */,
-				889B9458290B41D000B6A37C /* C_Elegans.xcdatamodeld */,
 			);
 			path = "C-Elegans";
 			sourceTree = "<group>";
@@ -128,6 +127,31 @@
 				889B9475290B41D000B6A37C /* C_ElegansUITestsLaunchTests.swift */,
 			);
 			path = "C-ElegansUITests";
+			sourceTree = "<group>";
+		};
+		889B9484290B421D00B6A37C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				889B945D290B41D000B6A37C /* LaunchScreen.storyboard */,
+				889B9455290B41D000B6A37C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		889B9485290B425200B6A37C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				889B9453290B41D000B6A37C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		889B9486290B426000B6A37C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				889B9458290B41D000B6A37C /* C_Elegans.xcdatamodeld */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
